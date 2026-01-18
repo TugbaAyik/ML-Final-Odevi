@@ -11,8 +11,8 @@ Amacım sadece var olan veriyi modele vermek değil, geçmiş tüketim alışkan
 <br>
 Eksik Veriler (NaN): Veri setinde çok az sayıda (sadece 1-2 satır) eksik veri olduğunu fark ettim. Bu kadar az veri için ortalama ile doldurma (imputation) yapmak yerine, veri bütünlüğünü bozmamak adına bu satırları sildim (dropna).
 <br>
-<img src="/images/resim1.1.png" width="700" >
-<img src="/images/resim1.2.png" width="700" >
+<img src="/images/resim1.1.png" width="300" >
+<img src="/images/resim1.2.png" width="300" >
 
 ---
 ### 2. Zaman Verisini İşlenebilir Hale Getirme
@@ -33,14 +33,14 @@ Last_1_Hour_Consumption: 1 saat önceki tüketim,
 
 Last_24_Hour_Consumption: Tam 24 saat önceki tüketim verilerini sütun olarak ekledim.
 <br>
-<img src="/images/resim3.1.png" width="700" >
+<img src="/images/resim3.png" width="700" >
 <br>
 * B. Referans Noktası (Baseline): Modelin "Bu saatte ve bu hava durumunda ev normalde ne kadar yakar?" sorusuna cevap verebilmesi için bir referans tablosu oluşturdum.
 
 Eğitim verisindeki her Saat ve Hava Durumu (Icon) ikilisi için ortalama tüketimi hesapladım (groupby ile).
 Bu ortalamayı Baseline_Consumption adıyla ana tabloya ekledim. Bu sayede model, tahmine sıfırdan başlamak yerine bu ortalamayı baz alıp ince ayar yapabildi.
 <br>
-<img src="/images/resim3.png" width="700" >
+<img src="/images/resim3.1.png" width="700" >
 
 ---
 ### 4. Hangi Sütunlar Neden Çıkarıldı? 
