@@ -12,6 +12,7 @@ Amacım sadece var olan veriyi modele vermek değil, geçmiş tüketim alışkan
 Eksik Veriler (NaN): Veri setinde çok az sayıda (sadece 1-2 satır) eksik veri olduğunu fark ettim. Bu kadar az veri için ortalama ile doldurma (imputation) yapmak yerine, veri bütünlüğünü bozmamak adına bu satırları sildim (dropna).
 <br>
 <img src="/images/resim1.1.png" width="300" >
+<br>
 <img src="/images/resim1.2.png" width="300" >
 
 ---
