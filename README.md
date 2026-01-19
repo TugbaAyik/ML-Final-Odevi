@@ -28,7 +28,8 @@ Gün ve Ay (day_of_week, month): Hafta içi/hafta sonu ayrımı ve mevsimsel etk
 ### 3. Özellik Mühendisliği (Feature Engineering) 
 Modelin başarısını artırmak için veriye iki kritik ekleme yaptım:
 
-* A. Geçmişe Bakış (Lag Features): Evin şu anki tüketimi, büyük ihtimalle 1 saat önceki veya dün aynı saatteki tüketimiyle ilişkilidir. Bu yüzden shift() fonksiyonunu kullanarak: Veriyi aşağı kaydırmış oldum ve geçmiş değerler bugünkü satıra geldi. Yani geçmişte olan artık bugünkü satırın özelliği oldu diyebiliriz.  Mesela burada shift(1) dediğimizde 1 satır aşağı kaydırmış oluyorz yani her satıra bir önceki saatin tüketimini yazıyoruz.
+* #### A. Geçmişe Bakış:
+  Evin şu anki tüketimi, büyük ihtimalle 1 saat önceki veya dün aynı saatteki tüketimiyle ilişkilidir. Bu yüzden shift() fonksiyonunu kullanarak: Veriyi aşağı kaydırmış oldum ve geçmiş değerler bugünkü satıra geldi. Yani geçmişte olan artık bugünkü satırın özelliği oldu diyebiliriz.  Mesela burada shift(1) dediğimizde 1 satır aşağı kaydırmış oluyorz yani her satıra bir önceki saatin tüketimini yazıyoruz.
 
 Last_1_Hour_Consumption: 1 saat önceki tüketim, 
 
@@ -36,7 +37,8 @@ Last_24_Hour_Consumption: Tam 24 saat önceki tüketim verilerini sütun olarak 
 <br>
 <img src="/images/resim3.png" width="700" >
 <br>
-* B. Referans Noktası (Baseline): Modelin "Bu saatte ve bu hava durumunda ev normalde ne kadar yakar?" sorusuna cevap verebilmesi için bir referans tablosu oluşturdum. Yani burada amacımız aynı saat (hour) ve aynı hava durumu (icon) koşullarında evin “ortalama” elektrik tüketimini referans (baseline) olarak hesaplayıp ve bunu her satıra eklemek.
+* #### B. Referans Noktası:
+  Modelin "Bu saatte ve bu hava durumunda ev normalde ne kadar yakar?" sorusuna cevap verebilmesi için bir referans tablosu oluşturdum. Yani burada amacımız aynı saat (hour) ve aynı hava durumu (icon) koşullarında evin “ortalama” elektrik tüketimini referans (baseline) olarak hesaplayıp ve bunu her satıra eklemek.
 
 Önce eğitim verisindeki her Saat ve Hava Durumu (Icon) ikilisi için ortalama tüketimi hesapladım (groupby ile).
 Bu ortalamayı Baseline_Consumption adıyla ana tabloya ekledim. Bu sayede model, tahmine sıfırdan başlamak yerine bu ortalamayı baz alıp ince ayar yapabildi.
@@ -53,7 +55,7 @@ Projenin en önemli kısmı burasıydı. İlk başta bu sütunları silmeyi unut
 
 Ev Aletleri (Dishwasher, Furnace, Fridge, Solar, Living room vb.): * Sebep: Benim hedefim evin Toplam Tüketimini tahmin etmek. Eğer bulaşık makinesinin, fırının ve buzdolabının ne kadar yaktığını modele verirsem, model bunları toplayıp sonucu bulur. Bu bir tahmin değil, hesap makinesi işlemi olur. Geleceği tahmin ederken "Yarın bulaşık makinesi çalışacak mı?" sorusunun cevabını bilemeyeceğim için bu sütunları sildim.
 
-* House overall [kW]: * Sebep: Hedef değişkenim olduğu için X (girdi) verisinden çıkardım.
+* House overall [kW]: Sebep: Hedef değişkenim olduğu için X (girdi) verisinden çıkardım.
 * Metin ve Ham Veriler (summary, cloudCover, time, date_obj):
 
 Sebep: summary sütunu icon ile aynı bilgiyi taşıyordu, gereksiz tekrarı önlemek ve metin verisiyle uğraşmamak için çıkardım. cloudCover sütununda ise sayısal olmayan hatalı veriler vardı. Tarihleri zaten parçaladığım için ham hallerini sildim.
