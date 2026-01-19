@@ -1,7 +1,7 @@
 ## Akıllı Ev Enerji Tüketimi Tahmin Projesi
 Bu projede, bir akıllı evden alınan sensör verilerini ve hava durumu bilgilerini kullanarak, evin saatlik toplam elektrik tüketimini (House overall [kW]) makine öğrenmesi yöntemleriyle tahmin etmeye çalıştım.
 
-Amacım sadece var olan veriyi modele vermek değil, geçmiş tüketim alışkanlıklarını da modele öğreterek daha gerçekçi tahminler elde etmekti.
+Amacım sadece var olan veriyi modele vermek değil, geçmiş tüketim alışkanlıklarını da modele öğreterek daha gerçekçi tahminler elde etmek.
 
 ---
 ### 1. Veri Setinin Yüklenmesi ve Temizlik
