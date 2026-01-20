@@ -47,7 +47,7 @@ Bu ortalamayı Baseline_Consumption adıyla ana tabloya ekledim. Bu sayede model
 
 ---
 ### 4. Hangi Sütunlar Neden Çıkarıldı? 
-Projenin en önemli kısmı burasıydı. İlk başta bu sütunları silmeyi unutmuştum ve r2 skorum 0.99 olarak geldi yani bu modelin verideki değişkenliği tamamı ile doğru bir şekilde açıklayabilmesi demek yani neredeyse yanlış tahmin yapmıyordu.Ama bu hile oluryordu çünkü bu özelliklerin aslında veri sızıntısına sebep olduğunu anladım.
+Projenin en önemli kısmı burasıydı. İlk başta bu sütunları silmeyi unutmuştum ve r2 skorum 0.99 olarak geldi yani bu modelin verideki değişkenliği tamamı ile doğru bir şekilde açıklayabilmesi demek yani neredeyse yanlış tahmin yapmıyordu.Ama bu hile oluyordu çünkü bu özelliklerin aslında veri sızıntısına sebep olduğunu anladım.
 <br>
 <img src="/images/resim4.png" width="700" >
 <br>
