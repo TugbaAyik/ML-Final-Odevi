@@ -63,7 +63,7 @@ Sebep: summary sütunu icon ile aynı bilgiyi taşıyordu, gereksiz tekrarı ön
 
 ---
 ### 5. Encoding ve Ölçeklendirme
-One-Hot Encoding: Hava durumu (icon) "Yağmurlu", "Güneşli" gibi kategorik veriler içeriyordu. Modelin bunları matematiksel işleyebilmesi için 0 ve 1'lerden oluşan sütunlara çevirdim (get_dummies). BUrada one-hot encoding her kategori için ayrı ayrı sütunlar oluşturuyor. Ama bu sorun değil çünkü icon özelliğimiz de zaten çok fazla farklı değişken olmadığı için aşırı bir sütun oluşumuna sebep olmuyor.Burada label encoding kullanmak saçma olurdu çünkü icon içindeki değerler anlam bakımından sıralanabilecek ve kıyaslanabilecek değerler değil. 
+One-Hot Encoding: Hava durumu (icon) "Yağmurlu", "Güneşli" gibi kategorik veriler içeriyordu. Modelin bunları matematiksel işleyebilmesi için 0 ve 1'lerden oluşan sütunlara çevirdim (get_dummies). Burada one-hot encoding her kategori için ayrı ayrı sütunlar oluşturuyor. Ama bu sorun değil çünkü icon özelliğimiz de zaten çok fazla farklı değişken olmadığı için aşırı bir sütun oluşumuna sebep olmuyor.Burada label encoding kullanmak saçma olurdu çünkü icon içindeki değerler anlam bakımından sıralanabilecek ve kıyaslanabilecek değerler değil. 
 <br>
 <img src="/images/resim5.png" width="700" >
 <br>
