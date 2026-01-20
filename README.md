@@ -53,7 +53,7 @@ Projenin en önemli kısmı burasıydı. İlk başta bu sütunları silmeyi unut
 <br>
 Çıkardığım sütunlar ve sebepleri:
 
-Ev Aletleri (Dishwasher, Furnace, Fridge, Solar, Living room vb.): * Sebep: Benim hedefim evin Toplam Tüketimini tahmin etmek. Eğer bulaşık makinesinin, fırının ve buzdolabının ne kadar yaktığını modele verirsem, model bunları toplayıp sonucu bulur. Bu bir tahmin değil, hesap makinesi işlemi olur. Geleceği tahmin ederken "Yarın bulaşık makinesi çalışacak mı?" sorusunun cevabını bilemeyeceğim için bu sütunları sildim.
+Ev Aletleri (Dishwasher, Furnace, Fridge, Solar, Living room vb.): Sebep: Benim hedefim evin Toplam Tüketimini tahmin etmek. Eğer bulaşık makinesinin, fırının ve buzdolabının ne kadar yaktığını modele verirsem, model bunları toplayıp sonucu bulur. Bu bir tahmin değil, hesap makinesi işlemi olur. Geleceği tahmin ederken "Yarın bulaşık makinesi çalışacak mı?" sorusunun cevabını bilemeyeceğim için bu sütunları sildim.
 
 * House overall [kW]: Sebep: Hedef değişkenim olduğu için X (girdi) verisinden çıkardım.
 * Metin ve Ham Veriler (summary, cloudCover, time, date_obj):
