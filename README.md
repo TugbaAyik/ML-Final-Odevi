@@ -84,7 +84,7 @@ KNN (K-Nearest Neighbors): Benzer koşullardaki geçmiş verileri baz aldığı 
 
 Sonuç: Her iki model de R² = ~0.76 civarında bir başarı skoru verdi.
 <br>
-<img src="/images/resim6.1.png" width="700" >
+<img src="/images/resim6.1.png" width="1000" >
 <br>
 Bu skor, modelin evin elektrik tüketimindeki değişimin %76'sını doğru açıklayabildiğini gösteriyor.
 
@@ -94,5 +94,5 @@ Geriye kalan %24'lük kısım ise insan davranışındaki rastgelelikten (aniden
 ### 7. Hangi Özellik Daha Önemli?
 Grafikte görüldüğü üzere Last_1_Hour_Consumption (Bir önceki saatin tüketimi), model için en baskın belirleyicidir. Bu beklenen bir durumdur çünkü evin 1 saat önceki durumu, şimdiki durumu hakkında en güçlü ipucunu verir.Baseline_Consumption özelliği de en önemli ilk 10 özellik arasına girerek modelin öğrenme sürecine katkıda bulunmuştur.
 <br>
-<img src="/images/grafik.png" width="400" >
+<img src="/images/grafik.png" width="700" >
 
