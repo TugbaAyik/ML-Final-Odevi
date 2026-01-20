@@ -84,7 +84,7 @@ KNN (K-Nearest Neighbors): Benzer koşullardaki geçmiş verileri baz aldığı 
 
 Sonuç: Her iki model de R² = ~0.76 civarında bir başarı skoru verdi.
 <br>
-<img src="/images/resim6.1.png" width="1000" >
+<img src="/images/resim6.1.png" width="700" >
 <br>
 Bu skor, modelin evin elektrik tüketimindeki değişimin %76'sını doğru açıklayabildiğini gösteriyor.
 
